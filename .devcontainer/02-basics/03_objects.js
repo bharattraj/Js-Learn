@@ -11,21 +11,28 @@ const jsUser={
     lastLoginDays: ["Moday","Saturday"],
     [mySym]: "symbol1"
 
-    //in oder to store symbols the syntax of key value pair is different
+    //in oder to store symbols the syntax of key valuedd4 pair is different
 //is we will store as=>     mySym: "symbol1"    //then it will treat mysym as string and not symbol
 //so the correct syntax is:  [mysym]: "symbol2" //then it will be treated as symbol
 }
 //both below ways are valid.
 console.log(jsUser.email);
-console.log(jsUser["email"]);
+//object can alao be declared using . operator or using square bracket!
+console.log(jsUser["email"]);//here not written[email] but "email" because it is string even if we not declared it
 console.log(jsUser.name);
 console.log(jsUser["location"]);
 console.log(typeof jsUser[mySym]);
 //if you want some keypairs to be not change or to be freezed 
 
+
+
+
 //DEBUG HERE if Freeze is no t commented then comment it
 // Object.freeze(jsUser);
 // console.log(jsUser);
+
+
+
 
 jsUser.greeting=function(){
     console.log("Hello everyone!!");
