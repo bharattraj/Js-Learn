@@ -3,13 +3,13 @@
 /*
 Concept of shallow copy and deep copy
 +++++++++++++++++++++++++++++++++++++++++
-javascript array copy operations follows shallow copies i.e references aare shareed with the copied object.
-while in deep copy the coies doesnt share the same reference from the heap.
+javascript array copy operations follow shallow copies i.e. references are shared with the copied object.
+while in deep copy the copies don't share the same reference from the heap.
 */
 const myArr=[0,1,2,3,4];
 const myHero=["shaktiman", "naagraj", "doga"];
 const myArr2=new Array(1,2,3,4);
-// //inside there is property or mtehod prototype and inside that there is also one method with same name i.e. prototype.
+// //inside there is a property or method prototype and inside that there is also one method with the same name i.e. prototype.
 // console.log(myArr);
 // console.log(myArr2);
 // console.log(myHero);
